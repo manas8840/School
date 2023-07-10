@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<script>
+var numOne, numTwo, res, temp;
+function fun()
+{
+  numOne = parseInt(document.getElementById("one").value);
+  numTwo = parseInt(document.getElementById("two").value);
+  if(numOne && numTwo)
+  {
+    temp = document.getElementById("res");
+    temp.style.display = "block";
+    res = numOne + numTwo;
+    document.getElementById("add").value = res;
+  }
+}
+</script> 
+</head>              
+<body>
+           
+      
+<p id="input">Enter First Number: <input onkeyup="fun()" onchange="fun()" id="one">    
+<br/><br/>
+Enter Second Number: <input  onkeyup="fun()" onchange="fun()" id="two"></p>
+<p><button onclick="fun()">Add</button></p>
+<p id="res" style="display:none;">
+Addition Result = <input id="add"><br/><br/>
+
+
+</body>
+</html> 

@@ -1,0 +1,22 @@
+let stringNumber = "123";
+let number = Number(stringNumber); // 123
+let floatNumber = parseFloat(stringNumber); // 123.0
+let intNumber = parseInt(stringNumber); // 123
+
+// Number to String Conversion
+let number = 123;
+let stringNumber = number.toString(); // "123"
+let anotherStringNumber = "" + number; // "123"
+
+// Boolean to String Conversion
+let booleanValue = true;
+let stringBoolean = booleanValue.toString(); // "true"
+let anotherStringBoolean = "" + booleanValue; // "true"
+
+// String to Boolean Conversion
+let stringBoolean = "true";
+let booleanValue = Boolean(stringBoolean); // true
+
+// Object to Primitive Conversion
+let obj = { x: 1, y: 2 };
+let primitiveValue = obj.valueOf().toString(); // "[object Object]"
